@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="NGC1976,个人网站">
+  <meta name="description" content="这是NGC1976的个人网站">
+  <title>NGC1976的个人网站</title>
+  <link rel="shortcut icon" href="Picture/HJR.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<!--浮动背景设置-->
+<div class="floating-bg bg-1"></div>
+<div class="floating-bg bg-2"></div>
+
+<!--主要内容设置-->
+<div class="container">
+  <header>
+    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 800" xmlns="http://www.w3.org/2000/svg" class="animated-wave" preserveAspectRatio="none">
+      <style>
+          .path-0{
+              animation:pathAnim-0 4s;
+              animation-timing-function: linear;
+              animation-iteration-count: infinite;
+          }
+          @keyframes pathAnim-0{
+              0%{
+                  d: path("M 0,800 L 0,200 C 120,400 240,500 360,450 C 480,400 600,200 720,200 C 840,200 960,400 1080,450 C 1200,500 1320,400 1440,300 L 1440,800 L 0,800 Z");
+              }
+              25%{
+                  d: path("M 0,800 L 0,200 C 120,350 240,400 360,400 C 480,400 600,250 720,240 C 840,230 960,285 1080,335 C 1200,385 1320,430 1440,375 L 1440,800 L 0,800 Z");
+              }
+              50%{
+                  d: path("M 0,800 L 0,200 C 120,300 240,350 360,350 C 480,350 600,300 720,280 C 840,260 960,270 1080,320 C 1200,370 1320,460 1440,450 L 1440,800 L 0,800 Z");
+              }
+              75%{
+                  d: path("M 0,800 L 0,200 C 120,350 240,400 360,400 C 480,400 600,250 720,240 C 840,230 960,285 1080,335 C 1200,385 1320,430 1440,375 L 1440,800 L 0,800 Z");
+              }
+              100%{
+                  d: path("M 0,800 L 0,200 C 120,400 240,500 360,450 C 480,400 600,200 720,200 C 840,200 960,400 1080,450 C 1200,500 1320,400 1440,300 L 1440,800 L 0,800 Z");
+              }
+          }
+      </style>
+      <defs>
+        <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
+          <stop offset="5%" stop-color="#F78DA7"></stop>
+          <stop offset="95%" stop-color="#8ED1FC"></stop>
+        </linearGradient>
+      </defs>
+      <path
+        d="M 0,800 L 0,200 C 120,400 240,500 360,450 C 480,400 600,200 720,200 C 840,200 960,400 1080,450 C 1200,500 1320,400 1440,300 L 1440,800 L 0,800 Z"
+        stroke="none"
+        stroke-width="0"
+        fill="url(#gradient)"
+        fill-opacity="1"
+        class="path-0">
+      </path>
+    </svg>
+    <div class="header-content">
+      <h1>欢迎来到NGC1976的个人网站</h1>
+      <p class="subtitle">非常高兴您能访问我的个人网站，希望下面内容能帮助您了解我</p>
+      <hr class="hr-style-1">
+    </div>
+  </header>
+
+  <br>
+
+  <!-- 第一行内容网格-->
+  <div class="content-grid">
+    <div class="card">
+      <h2><i class="fas fa-user"></i>个人简介</h2>
+      <p>广东佛山南海人，初中就读于金石实验中学，高中就读于石门中学</p>
+      <p>现华中科技大学计算机学院大一本科生</p>
+      <p>热衷于编程与技术探索，正不断学习于成长</p>
+      <button class="button">了解更多</button>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-graduation-cap"></i>教育背景</h2>
+      <ul>
+        <li><i class="fas fa-school"></i>初中：金石实验中学</li>
+        <li><i class="fas fa-university"></i>高中：石门中学</li>
+        <li><i class="fas fa-graduation-cap"></i>大学：华中科技大学</li>
+      </ul>
+    </div>
+  </div>
+
+  <!--第二行内容网格-->
+  <div class="content-grid">
+    <div class="card">
+      <h2><i class="fas fa-code"></i>技能栈</h2>
+      <ul>
+        <li>
+          <i class="fab fa-cuttlefish"></i>C/C++: 白银
+          <span class="silver"></span>
+        </li>
+        <li>
+          <i class="fab fa-html5"></i>前端开发：白银
+          <span class="silver"></span>
+        </li>
+        <li>
+          <i class="fas fa-camera"></i>摄影：黄金
+          <span class="gold"></span>
+        </li>
+        <li>
+          <i class="fas fa-gamepad"></i>ApexLegends: 钻石
+          <span class="diamond"></span>
+        </li>
+        <li>
+          <i class="fas fa-utensils"></i>吃饭: 大师
+          <span class="master"></span>
+        </li>
+        <li>
+          <i class="fas fa-bed"></i>睡觉: 猎杀
+          <span class="predator"></span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-project-diagram"></i>项目成果</h2>
+      <ul>
+        <li><i class="far fa-file-code"></i>个人网站开发</li>
+        <li><i class="fas fa-tasks"></i>更多项目筹备ing</li>
+      </ul>
+      <p style="margin-top: 15px; font-style: italic; color: var(--text-muted);">作为大一新生，我正积极学习并参与更多项目实践</p>
+    </div>
+  </div>
+
+  <!--第三行内容网格-->
+  <div class="content-grid">
+    <div class="card">
+      <h2><i class="fas fa-heart"></i>兴趣爱好</h2>
+      <ul>
+        <li><i class="fas fa-laptop-code"></i>编程与算法</li>
+        <li><i class="fas fa-camera"></i>摄影</li>
+        <li><i class="fas fa-gamepad"></i>电子游戏</li>
+        <li><i class="fas fa-book"></i>阅读</li>
+      </ul>
+      <button class="button">个人画廊</button>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-bullseye"></i>学习目标</h2>
+      <ul>
+        <li><i class="fas fa-check-circle"></i>深入学习C/C++</li>
+        <li><i class="fas fa-check-circle"></i>深入学习前端开发</li>
+        <li><i class="fas fa-check-circle"></i>提升数理化水平</li>
+        <li><i class="fas fa-check-circle"></i>提升英语水平</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 NGC1976的个人网站 | 华中科技大学</p>
+    <div class="social-links">
+      <a href="https://github.com/HJR831" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="javascript:void(0);" onclick="showWechatQR()"><i class="fab fa-weixin"></i></a>
+      <a href="mailto:HJR831@outlook.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <div id="wechatQR" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:1000;">
+    <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:white; padding:30px; border-radius:15px; text-align:center;">
+      <h3 style="color:black; margin-bottom:15px;">添加我的微信</h3>
+      <img src="Picture/WeChatQR.jpg" alt="微信二维码" style="width:200px; height:200px; display:block;">
+      <p style="color:black; margin-top:15px;">扫描二维码添加微信</p>
+      <button onclick="closeWechatQR()" style="margin-top:15px; padding:8px 20px; background:var(--primary); color:white; border:none; border-radius:5px; cursor:pointer;">关闭</button>
+    </div>
+  </div>
+
+  <script>
+    function showWechatQR() {
+      document.getElementById('wechatQR').style.display = 'block';
+    }
+
+    function closeWechatQR() {
+      document.getElementById('wechatQR').style.display = 'none';
+    }
+    document.getElementById('wechatQR').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeWechatQR();
+      }
+    });
+  </script>
+</div>>
+
+</body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-10px)';
+      });
+
+      card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+      });
+    });
+
+    //第一个按钮
+    const button = document.querySelector('.button');
+    if (button) {
+      button.replaceWith(button.cloneNode(true));
+
+      const newButton = document.querySelector('.button');
+
+      newButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        console.log('按钮被点击了');
+        window.location.href = 'Introduction.html';
+      });
+
+      newButton.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-2px)';
+      });
+
+      newButton.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+      });
+    }
+
+    //第二个按钮
+    const galleryButton = document.querySelectorAll('.button')[1];
+    if (galleryButton) {
+      galleryButton.replaceWith(galleryButton.cloneNode(true));
+
+      const newGalleryButton = document.querySelectorAll('.button')[1];
+
+      newGalleryButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        console.log('画廊按钮被点击了');
+        window.location.href = 'gallery.html';
+      });
+
+      newGalleryButton.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-2px)';
+      });
+
+      newGalleryButton.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+      });
+    }
+  });
+
+</script>
+</html>
