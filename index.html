@@ -83,6 +83,7 @@
         <li><i class="fas fa-university"></i>高中：石门中学</li>
         <li><i class="fas fa-graduation-cap"></i>大学：华中科技大学</li>
       </ul>
+      <button class="button">了解更多</button>
     </div>
   </div>
 
@@ -125,6 +126,7 @@
         <li><i class="fas fa-tasks"></i>更多项目筹备ing</li>
       </ul>
       <p style="margin-top: 15px; font-style: italic; color: var(--text-muted);">作为大一新生，我正积极学习并参与更多项目实践</p>
+      <button class="button">了解更多</button>
     </div>
   </div>
 
@@ -202,7 +204,6 @@
       });
     });
 
-    //第一个按钮
     const button = document.querySelector('.button');
     if (button) {
       button.replaceWith(button.cloneNode(true));
@@ -224,12 +225,53 @@
       });
     }
 
-    //第二个按钮
-    const galleryButton = document.querySelectorAll('.button')[1];
+    const schoolButton = document.querySelectorAll('.button')[1];
+    if (schoolButton) {
+      schoolButton.replaceWith(schoolButton.cloneNode(true));
+
+      const newschoolButton = document.querySelectorAll('.button')[1];
+
+      newschoolButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        console.log('学校按钮被点击了');
+        window.location.href = 'school.html';
+      });
+
+      newschoolButton.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-2px)';
+      });
+
+      newschoolButton.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+      });
+    }
+
+    const projectButton = document.querySelectorAll('.button')[2];
+    if (projectButton) {
+      projectButton.replaceWith(projectButton.cloneNode(true));
+
+      const newprojectButton = document.querySelectorAll('.button')[2];
+
+      newprojectButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        console.log('项目按钮被点击了');
+        window.location.href = 'project.html';
+      });
+
+      newprojectButton.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-2px)';
+      });
+
+      newprojectButton.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+      });
+    }
+
+    const galleryButton = document.querySelectorAll('.button')[3];
     if (galleryButton) {
       galleryButton.replaceWith(galleryButton.cloneNode(true));
 
-      const newGalleryButton = document.querySelectorAll('.button')[1];
+      const newGalleryButton = document.querySelectorAll('.button')[3];
 
       newGalleryButton.addEventListener('click', function(e) {
         e.preventDefault();
